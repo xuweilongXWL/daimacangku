@@ -1,0 +1,44 @@
+.swiper{
+    height: 350rpx;
+}
+
+.swiper image{
+    width: 100%;
+    height: 350rpx;
+}
+
+/* 菜单九宫格 */
+.menus{
+    display: flex;
+    /* flex布局默认是不换行，这是设置允许内部换行 */
+    flex-wrap: wrap;
+}
+
+.menu-item{
+    width: 33.33%;
+    padding: 20rpx 0;
+    text-align: center;
+
+    /* 因为边框是属于盒子本身的属性，所以会加入到宽高，如果不需要加入到宽高可以使用内减模式 */
+    box-sizing: border-box;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+}
+
+.menu-item:nth-child(3n){
+    border-right: none;
+}
+
+.menu-item:nth-child(1) .iconfont{
+    color: #66cbff;
+}
+
+
+.menu-item .iconfont{
+    font-size: 60rpx;
+}
+
+.menu-item text{
+    font-size: 14px
+}
+

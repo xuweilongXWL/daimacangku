@@ -1,0 +1,21 @@
+<!-- 轮播图 -->
+<!-- indicator-dots显示面板指示点 -->
+<swiper indicator-dots class="swiper">
+    <block wx:for="{{banners}}" wx:key="index">
+        <swiper-item>
+            <image src="{{item.image_src}}" mode="aspectFill"></image>
+        </swiper-item>
+    </block>
+</swiper>
+
+<!-- 中间的九宫格菜单 -->
+<view class="menus">
+    <navigator url="/pages/goodsList/index?keyword={{item.text}}"
+    class="menu-item" 
+    wx:for="{{menus}}" 
+    wx:key="index">
+        <!-- 字体图标 -->
+        <view class="iconfont {{ item.icon }}"></view>
+        <text>{{ item.text }}</text>
+    </navigator>
+</view>

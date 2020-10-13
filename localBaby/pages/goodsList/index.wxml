@@ -1,0 +1,22 @@
+<view class="goods-list">
+    <navigator 
+    url="/pages/goodsDetail/index?goods_id={{ item.goods_id }}"
+    class="goods-item" 
+    wx:for="{{goods}}" 
+    wx:key="index">
+        <!-- 左边的图片 -->
+        <image mode="aspectFill" src='{{ item.goods_small_logo }}'></image>
+        <!-- 右边的商品信息 -->
+        <view class="goods-info">
+            <view class="goods-title">
+                 {{ item.goods_name }}
+            </view>
+            <view class="goods-price">
+                ￥{{ item.goods_price }}
+            </view>
+        </view>
+    </navigator>
+</view>
+
+<view wx:if="{{hasMore}}" class="hasmore">正在加载</view>
+<view wx:if="{{!hasMore}}" class="hasmore">我也是有底线的，别再拖了</view>

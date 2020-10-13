@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/message/index",
+        "pages/personal/index",
+        "pages/goodsList/index",
+        "pages/goodsDetail/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#66cbff",
+        "navigationBarTitleText": "本地宝小程序",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "selectedColor": "#66cbff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/images/home.png",
+                "selectedIconPath": "/images/home2.png"
+            },
+            {
+                "pagePath": "pages/message/index",
+                "text": "消息",
+                "iconPath": "/images/message.png",
+                "selectedIconPath": "/images/message2.png"
+            },
+            {
+                "pagePath": "pages/personal/index",
+                "text": "我的",
+                "iconPath": "/images/personal.png",
+                "selectedIconPath": "/images/personal2.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
